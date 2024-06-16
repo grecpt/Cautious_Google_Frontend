@@ -1,42 +1,147 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+/* src/App.css */
+
+.app {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.homeowner {
+    text-align: center;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.homeowner input {
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.services-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
 }
 
-.card {
-  padding: 2em;
+.service-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    width: 250px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    /* Add this to make the card look clickable */
 }
 
-.read-the-docs {
-  color: #888;
+.service-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Add this for hover effect */
+}
+
+.service-card h3 {
+    margin: 0 0 10px;
+}
+
+.service-card p {
+    margin: 0 0 20px;
+}
+
+.service-card-footer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.service-card-footer span {
+    font-weight: bold;
+}
+
+.service-details {
+    text-align: left;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.service-details a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+.service-details a:hover {
+    text-decoration: underline;
+}
+
+.service-images {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.service-images img {
+    width: 150px;
+    height: 150px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+.booking-form {
+    margin-top: 20px;
+}
+
+.booking-form .form-group {
+    margin-bottom: 15px;
+}
+
+.booking-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.booking-form input,
+.booking-form select {
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.booking-form button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.booking-form button:hover {
+    background-color: #0056b3;
+}
+
+.booking-confirmation {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #28a745;
+    background-color: #d4edda;
+    border-radius: 4px;
+}
+
+.booking-confirmation h3 {
+    margin-top: 0;
+    color: #155724;
 }
